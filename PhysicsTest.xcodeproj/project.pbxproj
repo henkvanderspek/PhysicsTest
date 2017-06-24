@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B67D76E21EFE9E9C001C9CA8 /* SolarSystem+SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67D76E11EFE9E9C001C9CA8 /* SolarSystem+SceneKit.swift */; };
 		B6983A7B1EFBC39700B26F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6983A7A1EFBC39700B26F9E /* AppDelegate.swift */; };
 		B6983A7D1EFBC39700B26F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6983A7C1EFBC39700B26F9E /* ViewController.swift */; };
 		B6983A801EFBC39700B26F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6983A7E1EFBC39700B26F9E /* Main.storyboard */; };
 		B6983A821EFBC39700B26F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6983A811EFBC39700B26F9E /* Assets.xcassets */; };
 		B6983A851EFBC39700B26F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6983A831EFBC39700B26F9E /* LaunchScreen.storyboard */; };
+		B6983A8D1EFBE69C00B26F9E /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6983A8C1EFBE69C00B26F9E /* SolarSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B67D76E11EFE9E9C001C9CA8 /* SolarSystem+SceneKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SolarSystem+SceneKit.swift"; sourceTree = "<group>"; };
 		B6983A771EFBC39700B26F9E /* PhysicsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6983A7A1EFBC39700B26F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6983A7C1EFBC39700B26F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B6983A811EFBC39700B26F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6983A841EFBC39700B26F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6983A861EFBC39700B26F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6983A8C1EFBE69C00B26F9E /* SolarSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				B6983A7A1EFBC39700B26F9E /* AppDelegate.swift */,
+				B6983A8C1EFBE69C00B26F9E /* SolarSystem.swift */,
+				B67D76E11EFE9E9C001C9CA8 /* SolarSystem+SceneKit.swift */,
 				B6983A7C1EFBC39700B26F9E /* ViewController.swift */,
 				B6983A7E1EFBC39700B26F9E /* Main.storyboard */,
 				B6983A811EFBC39700B26F9E /* Assets.xcassets */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67D76E21EFE9E9C001C9CA8 /* SolarSystem+SceneKit.swift in Sources */,
 				B6983A7D1EFBC39700B26F9E /* ViewController.swift in Sources */,
 				B6983A7B1EFBC39700B26F9E /* AppDelegate.swift in Sources */,
+				B6983A8D1EFBE69C00B26F9E /* SolarSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TY7XLLRKJW;
 				INFOPLIST_FILE = PhysicsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.vanmezelf.PhysicsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TY7XLLRKJW;
 				INFOPLIST_FILE = PhysicsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.vanmezelf.PhysicsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +322,7 @@
 				B6983A8B1EFBC39700B26F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
