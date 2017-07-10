@@ -83,7 +83,8 @@ extension SolarSystem {
 extension SCNNode {
     static func camera() -> SCNNode {
         let node = SCNNode()
-        node.camera = SCNCamera()
+        let camera = SCNCamera()
+        node.camera = camera
         node.position = SCNVector3Make(0, 0, 30)
         node.rotation = SCNVector4Make(1, 0, 0, -atan2f(node.position.y, node.position.z))
         return node
@@ -91,6 +92,7 @@ extension SCNNode {
     static func sun() -> SCNNode {
         let light = SCNLight()
         light.type = .omni
+        light.intensity = 2000
         let node = SCNNode()
         node.light = light
         return node

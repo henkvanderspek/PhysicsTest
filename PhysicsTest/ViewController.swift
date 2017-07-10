@@ -14,7 +14,7 @@ private extension Color {
         return Color(red: 4/255, green: 120/255, blue: 1)
     }
     static var moon: Color {
-        return Color(red: 224/255, green: 224/255, blue: 224/255)
+        return Color(red: 94/255, green: 94/255, blue: 94/255)
     }
 }
 
@@ -23,16 +23,16 @@ private extension Orbit {
         return Orbit(duration: 0, axis: 0, distance: 0)
     }
     static var moon: Orbit {
-        return Orbit(duration: 10, axis: 30, distance: PhyiscalBody.earth.radius + PhyiscalBody.moon.radius + 5.0)
+        return Orbit(duration: 10, axis: 5.14, distance: 384.405 / 50.0)
     }
 }
 
 private extension PhyiscalBody {
     static var earth: PhyiscalBody {
-        return PhyiscalBody(radius: 3.5, color: Color.earth)
+        return PhyiscalBody(radius: 6.378 / 2.0, color: Color.earth)
     }
     static var moon: PhyiscalBody {
-        return PhyiscalBody(radius: PhyiscalBody.earth.radius/4, color: Color.moon)
+        return PhyiscalBody(radius: PhyiscalBody.earth.radius / 4.0, color: Color.moon)
     }
 }
 

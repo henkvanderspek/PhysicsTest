@@ -11,6 +11,9 @@ import SceneKit
 struct PhyiscalBody {
     let radius: Float
     let color: Color
+    var diamater: Float {
+        return radius * 2
+    }
 }
 
 struct Orbit {
